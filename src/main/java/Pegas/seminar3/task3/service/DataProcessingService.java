@@ -16,16 +16,12 @@ public class DataProcessingService {
     private UserRepository repository;
 
     public List<User> sortUserByAge(List<User> users){
-        return users.stream().sorted(Comparator.comparing(User::getAge))
+        return users.stream().sorted(Comparator.comparing(User::getCompletion_time))
                 .toList();
     }
 
-    public List<User> filterUserByAge(List<User> users, int age){
-        return users.stream().filter(user-> user.getAge()>age)
-                .toList();
-    }
 
-    public double calculateAverageAge(List<User> users){
-        return users.stream().mapToInt(User::getAge).average().orElse(0);
-    }
+//    public double calculateAverageAge(List<User> users){
+//        return users.stream().mapToInt(User::get).average().orElse(0);
+//    }
 }

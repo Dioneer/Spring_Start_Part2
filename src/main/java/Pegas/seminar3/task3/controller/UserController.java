@@ -10,19 +10,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * все в HW3, тут другая бд подключена
+ */
 @RestController
 @RequiredArgsConstructor
 public class UserController {
     private RegistrationService service;
 
-    @GetMapping
-    public List<User> userList(){
-        return service.getDataProcessingService().getRepository().findAll();
-    }
-
-    @PostMapping("/body")
-    public String createUser(@RequestBody User user){
-        service.getDataProcessingService().getRepository().save(user);
-        return "Add user from body";
-    }
+//    @GetMapping
+//    public List<User> userList(){
+//        return service.getDataProcessingService().getRepository().findAll();
+//    }
+//
+//    @PostMapping("/body")
+//    public String createUser(@RequestBody User user){
+//        service.getDataProcessingService().getRepository().save(user);
+//        return "Add user from body";
+//    }
 }
