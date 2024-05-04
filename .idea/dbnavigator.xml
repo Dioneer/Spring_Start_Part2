@@ -25,25 +25,34 @@ description text,
 status varchar(30),
 completion_time timestamp
 );
-drop table tasks;]]></console>
+drop table tasks;
+
+create table account (
+    id bigserial PRIMARY KEY,
+    account_name VARCHAR(50) NOT NULL,
+    amount numeric NOT NULL
+);]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="f09b48e9-2a25-4242-be0f-7589b2b426f8" object-ref="schemas/public/tables/tasks" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="f09b48e9-2a25-4242-be0f-7589b2b426f8" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="f09b48e9-2a25-4242-be0f-7589b2b426f8" dataset="public.tasks" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f09b48e9-2a25-4242-be0f-7589b2b426f8" dataset="public.account" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/sql/create_account.sql" connection-id="f09b48e9-2a25-4242-be0f-7589b2b426f8" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/sql/fill_account.sql" connection-id="f09b48e9-2a25-4242-be0f-7589b2b426f8" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
