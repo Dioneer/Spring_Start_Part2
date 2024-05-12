@@ -31,6 +31,19 @@ create table account (
     id bigserial PRIMARY KEY,
     account_name VARCHAR(50) NOT NULL,
     amount numeric NOT NULL
+);
+create table book(
+    id bigserial PRIMARY KEY,
+    title VARCHAR(50) NOT NULL,
+    author VARCHAR(50) NOT NULL,
+    publication_year int 
+);
+drop table book;
+
+create table products(
+    id bigserial PRIMARY KEY,
+    name_products VARCHAR(50) NOT NULL,
+    quantity bigint
 );]]></console>
     </connection>
   </component>

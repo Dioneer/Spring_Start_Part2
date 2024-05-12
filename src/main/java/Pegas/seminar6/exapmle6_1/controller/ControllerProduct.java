@@ -11,7 +11,7 @@ import java.util.List;
 //Проверка свагером http://localhost:8080/swagger-ui/index.html
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/productss")
 @RequiredArgsConstructor
 public class ControllerProduct {
 
@@ -27,7 +27,7 @@ public class ControllerProduct {
             return new ResponseEntity<>(serviceProduct.createProduct(product), HttpStatus.CREATED);
         }
 
-        @GetMapping("{id}")
+        @GetMapping("/{id}")
         public ResponseEntity<Product> getProduct(@PathVariable("id") Long id) {
             Product productById;
             try {
@@ -38,12 +38,12 @@ public class ControllerProduct {
             return new ResponseEntity<>(productById, HttpStatus.OK);
         }
 
-        @PutMapping("{id}")
+        @PutMapping("/{id}")
         public ResponseEntity<Product> updateProduct(@PathVariable("id") Long id, @RequestBody Product product) {
             return new ResponseEntity<>(serviceProduct.updateProduct(id,product), HttpStatus.OK);
         }
 
-        @DeleteMapping("{id}")
+        @DeleteMapping("/{id}")
         public ResponseEntity<Void> deleteProduct(@PathVariable("id") Long id){
             serviceProduct.deleteProduct(id);
             return ResponseEntity.ok().build();
