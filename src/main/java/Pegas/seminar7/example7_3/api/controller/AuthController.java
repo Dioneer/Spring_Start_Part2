@@ -1,18 +1,18 @@
 package Pegas.seminar7.example7_3.api.controller;
 
-import Pegas.seminar7.example7_3.api.dto.UserDTO;
-import Pegas.seminar7.example7_3.service.JwtTokenService;
-import Pegas.seminar7.example7_3.service.LoginService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+//import Pegas.seminar7.example7_3.api.dto.UserDTO;
+//import Pegas.seminar7.example7_3.service.JwtTokenService;
+//import Pegas.seminar7.example7_3.service.LoginService;
+//import org.springframework.http.HttpStatus;
+//import org.springframework.http.ResponseEntity;
+//import org.springframework.web.bind.annotation.PostMapping;
+//import org.springframework.web.bind.annotation.RequestBody;
+//import org.springframework.web.bind.annotation.RequestMapping;
+//import org.springframework.web.bind.annotation.RestController;
 
-@RestController()
-@RequestMapping("/auth")
-public class AuthController {
+//@RestController()
+//@RequestMapping("/auth")
+//public class AuthController {
 
 //    private final JwtTokenService jwtTokenService;
 //    private final LoginService loginService;
@@ -30,4 +30,4 @@ public class AuthController {
 //                    return new ResponseEntity<>("Bearer " + token, HttpStatus.OK);
 //                }).orElseGet(() -> new ResponseEntity<>(HttpStatus.UNAUTHORIZED));
 //    }
-}
+//}

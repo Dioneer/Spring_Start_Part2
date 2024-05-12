@@ -1,15 +1,15 @@
 package Pegas.seminar7.example7_3.api.controller;
 
-import Pegas.seminar7.example7_3.service.JwtTokenService;
-import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+//import Pegas.seminar7.example7_3.service.JwtTokenService;
+//import jakarta.servlet.http.HttpServletRequest;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.http.HttpStatus;
+//import org.springframework.http.ResponseEntity;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.RestController;
 
-@RestController()
-public class TestController {
+//@RestController()
+//public class TestController {
 
 //    private final JwtTokenService service;
 //
@@ -25,4 +25,4 @@ public class TestController {
 //
 //        return new ResponseEntity<>( "Hello World!" +  userId, HttpStatus.OK);
 //    }
-}
+//}

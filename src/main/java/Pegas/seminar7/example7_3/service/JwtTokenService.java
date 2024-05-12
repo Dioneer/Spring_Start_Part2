@@ -1,22 +1,22 @@
 package Pegas.seminar7.example7_3.service;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.stereotype.Component;
-import java.io.Serializable;
-import java.util.*;
-import java.util.function.Function;
+//import io.jsonwebtoken.Claims;
+//import io.jsonwebtoken.Jwts;
+//import io.jsonwebtoken.SignatureAlgorithm;
+//import jakarta.servlet.http.HttpServletRequest;
+//import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+//import org.springframework.security.core.Authentication;
+//import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.authority.SimpleGrantedAuthority;
+//import org.springframework.stereotype.Component;
+//import java.io.Serializable;
+//import java.util.*;
+//import java.util.function.Function;
 
-@Component
-public class JwtTokenService implements Serializable {
-
+//@Component
+//public class JwtTokenService implements Serializable {
+//
 //    @Value("${jwt.token.validity}")
 //    private long JWT_TOKEN_VALIDITY;
 //
@@ -63,4 +63,4 @@ public class JwtTokenService implements Serializable {
 //
 //        return new UsernamePasswordAuthenticationToken(userId, null, authorities);
 //    }
-}
+//}
