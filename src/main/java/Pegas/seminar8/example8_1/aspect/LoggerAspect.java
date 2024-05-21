@@ -13,7 +13,7 @@ public class LoggerAspect {
         Object returnedByMethod = proceedingJoinPoint.proceed();
         return returnedByMethod;
     }
-    @AfterReturning(value = "@annotation(Tolog)", returning = "returnedValue")
+    @AfterReturning(value = "@annotation(Pegas.seminar8.example8_1.aspect.ToLog)", returning = "returnedValue")
     public void log(Object returnedValue){
         System.out.println("Method executed and returned "+returnedValue);
     }
